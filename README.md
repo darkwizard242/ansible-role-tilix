@@ -2,7 +2,7 @@
 Ansible Role: tilix
 =========
 
-Role to install (_by default_) `tilix` package  or uninstall (_if  passed as var_)  on **Debian** based systems.
+Role to install (_by default_) `tilix` package  or uninstall (_if  passed as var_)  on **Ubuntu 18.04** and **Debian 10** systems.
 
 Requirements
 ------------
