@@ -1,0 +1,4 @@
+---
+# defaults file for tilix
+tilix_app: tilix
+tilix_desired_state: present

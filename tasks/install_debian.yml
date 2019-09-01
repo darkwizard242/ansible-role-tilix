@@ -1,0 +1,9 @@
+---
+# tasks file for tilix - Debian
+
+- name: Installing {{ tilix_app }} on Debian systems
+  apt:
+    name: "{{ tilix_app }}"
+    state: "{{ tilix_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
