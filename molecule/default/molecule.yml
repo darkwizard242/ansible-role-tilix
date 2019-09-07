@@ -6,12 +6,12 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: Ubuntu-18.04
-    image: ubuntu:18.04
-  - name: Debian-10
-    image: debian:buster
+  - name: ${DISTRO:-ubuntu-18.04}
+    image: "darkwizard242/ansible:${DISTRO:-ubuntu-18.04}"
+    pre_build_image: true
 provisioner:
   name: ansible
+  log: true
   lint:
     name: ansible-lint
 scenario:

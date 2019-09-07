@@ -12,14 +12,18 @@ services:
   - docker
 
 env:
-  - ROLE_NAME: tilix
+  global:
+    - ROLE_NAME: tilix
+  matrix:
+    - DISTRO: ubuntu-18.04
+    - DISTRO: debian-buster
 
 addons:
   sonarcloud:
     organization: "tech-overlord-github"
 
 before_install:
-  - sudo apt-get -qq update
+  - sudo apt-get update
 
 install:
   - pip3 install molecule docker
