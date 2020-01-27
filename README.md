@@ -12,14 +12,19 @@ None.
 
 Available variables are listed below (located in `defaults/main.yml`):
 
+### Variables list:
+
 ```yaml
 tilix_app: tilix
 tilix_desired_state: present
 ```
 
-Variable `tilix_app`: Defines the app to install i.e. **tilix**
+### Variables table:
 
-Variable `tilix_desired_state`: Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package.
+Variable            | Value (default) | Description
+------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------
+tilix_app           | tilix           | Defines the app to install on Debian based systems i.e. **tilix**
+tilix_desired_state | present         | Defined to dynamically select whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default set to `present`.
 
 ## Dependencies
 
