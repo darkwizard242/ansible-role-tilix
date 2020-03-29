@@ -2,7 +2,7 @@
 
 # Ansible Role: tilix
 
-Role to install (_by default_) `tilix` package or uninstall (_if passed as var_) on **Ubuntu 18.04** and **Debian 10** systems.
+Role to install (_by default_) [tilix](https://gnunn1.github.io/tilix-web/) package or uninstall (_if passed as var_) on **Ubuntu 18.04** and **Debian 10** systems.
 
 ## Requirements
 
@@ -37,7 +37,7 @@ For default behaviour of role (i.e. installation of **tilix** package) in ansibl
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.tilix
+    - darkwizard242.tilix
 ```
 
 For customizing behavior of role (i.e. installation of latest **tilix** package) in ansible playbooks.
@@ -45,9 +45,9 @@ For customizing behavior of role (i.e. installation of latest **tilix** package)
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.tilix
-      vars:
-        tilix_desired_state: latest
+    - darkwizard242.tilix
+  vars:
+    tilix_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. un-installation of **tilix** package) in ansible playbooks.
@@ -55,9 +55,9 @@ For customizing behavior of role (i.e. un-installation of **tilix** package) in 
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.tilix
-      vars:
-        tilix_desired_state: absent
+    - darkwizard242.tilix
+  vars:
+    tilix_desired_state: absent
 ```
 
 ## License
