@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: tilix
-  author: Ali Muhammad
+  author: darkwizard242
   description: Role for dynamically installing or uninstalling 'tilix' package.
   company: none
   license: MIT
