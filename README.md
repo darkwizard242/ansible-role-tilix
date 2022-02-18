@@ -21,10 +21,10 @@ tilix_desired_state: present
 
 ### Variables table:
 
-Variable            | Value (default) | Description
-------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------
-tilix_app           | tilix           | Defines the app to install on Debian based systems i.e. **tilix**
-tilix_desired_state | present         | Defined to dynamically select whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default set to `present`.
+Variable            | Description
+------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------
+tilix_app           | Defines the app to install on Debian based systems i.e. **tilix**
+tilix_desired_state | Defined to dynamically select whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default set to `present`.
 
 ## Dependencies
 
@@ -66,4 +66,4 @@ For customizing behavior of role (i.e. un-installation of **tilix** package) in 
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/).
+This role was created by [Ali Muhammad](https://www.alimuhammad.dev/).
