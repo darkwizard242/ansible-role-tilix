@@ -2,7 +2,7 @@
 # tasks file for tilix - Debian
 
 - name: Debian/Ubuntu Family | Installing {{ tilix_app }}
-  apt:
+  ansible.builtin.apt:
     name: "{{ tilix_app }}"
     state: "{{ tilix_desired_state }}"
     force_apt_get: yes
